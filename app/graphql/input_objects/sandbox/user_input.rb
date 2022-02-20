@@ -5,7 +5,7 @@ module InputObjects
     class UserInput < Types::BaseInputObject
       description 'Create, update user information'
 
-      argument :id, Int, required: false
+      argument :id, String, required: false
       argument :name, String, required: false
       argument :email, String, required: true
     end

@@ -21,4 +21,7 @@ Things you may want to cover:
 
 * Deployment instructions
 
+* Run
+  rails s -p 3333
+
 * ...

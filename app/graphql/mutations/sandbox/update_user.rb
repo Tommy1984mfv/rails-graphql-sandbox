@@ -10,7 +10,7 @@ module Mutations
       field :user, Types::Sandbox::UserType, null: false
 
       def resolve(user_input:)
-        user = User.find(user_input.id)
+        user = User.find(user_input.id.to_i)
         user.update!(
           name: user_input.name,
           email: user_input.email
