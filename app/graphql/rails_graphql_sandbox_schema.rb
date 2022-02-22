@@ -1,6 +1,6 @@
 class RailsGraphqlSandboxSchema < GraphQL::Schema
   mutation(Types::MutationType)
-  query(Types::QueryType)
+  query(Types::Guest::QueryType)
 
   # For batch-loading (see https://graphql-ruby.org/dataloader/overview.html)
   use GraphQL::Dataloader
