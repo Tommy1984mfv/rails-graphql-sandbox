@@ -63,6 +63,9 @@ group :development, :test do
 
   # rspec-rails is a testing framework for Rails 5+.
   gem 'rspec-rails', '~> 5.1'
+
+  # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
+  gem 'rack-cors', '~> 1.1', '>= 1.1.1'
 end
 
 group :development do
@@ -74,9 +77,6 @@ group :development do
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
-
-  # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
-  gem 'rack-cors', '~> 1.1', '>= 1.1.1'
 end
 
 group :test do
